@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Wed Mar 17 19:59:53 BDT 2021:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0178-407c-543d-0000069ba6b0 
+on database directory memory:/home/shoumitro/Documents/html_ex/Spring Boot Project/spring_boot_jpa_derbyBD_ex2/27e8c182-8339-449f-b71b-908504e8bf10 with class loader org.springframework.boot.loader.LaunchedURLClassLoader@5910e440 
+Loaded from jar:file:/home/shoumitro/Documents/html_ex/Spring%20Boot%20Project/spring_boot_jpa_derbyBD_ex2/target/spring_boot_jpa_derbyBD_ex2-0.0.1-SNAPSHOT.jar!/BOOT-INF/lib/derby-10.14.2.0.jar!/
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_171-b11
+user.dir=/home/shoumitro/Documents/html_ex/Spring Boot Project/spring_boot_jpa_derbyBD_ex2
+os.name=Linux
+os.arch=amd64
+os.version=4.19.167-1-MANJARO
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

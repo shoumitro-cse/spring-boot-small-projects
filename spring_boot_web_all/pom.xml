@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    
+    <modelVersion>4.0.0</modelVersion>
+    
+     <!-- This is parent project.This Parent project is used to declare that my project is a child to this parent project. -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.4.3</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    
+    <groupId>com.example</groupId>
+    <artifactId>spring_boot_web_all</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>spring_boot_web_all</name>
+    <description>Demo project for Spring Boot</description>
+    
+    <!-- For create jar file --> 
+    <packaging>jar</packaging> 
+   
+   <!-- For create ear file --> 
+   <!-- <packaging>ear</packaging>  -->
+   
+      <!-- For create war file --> 
+    <!--<packaging>war</packaging>-->  
+
+    
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+    
+    
+    <dependencies>
+    
+       <!--  It require to deploy .war file -->
+		<dependency>  
+			<groupId>org.springframework.boot</groupId>  
+			<artifactId>spring-boot-starter-tomcat</artifactId>  
+			<scope>provided</scope>  
+		</dependency>
+    
+    
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+        
+        
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- 
+        The aim of the module is to try and improve the development time while working with the Spring Boot application. Spring Boot DevTools pick up the changes and restart the application.
+        
+        After that, make any changes (edit or remove some file or code) in the application, and save that changes. As soon as we save the changes, the server restarts and pick up the changes.
+        -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>runtime</scope>
+            <optional>true</optional>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        
+        <!-- https://www.javatpoint.com/spring-boot-actuator
+          Spring Boot Actuator is a sub-project of the Spring Boot Framework. It includes a number of additional features that help us to monitor and manage the Spring Boot application.
+          http://localhost:8080/actuator/health
+          http://localhost:8080/actuator -->
+        <dependency>  
+			<groupId>org.springframework.boot</groupId>  
+			<artifactId>spring-boot-starter-actuator</artifactId>  
+		</dependency> 
+		
+	   <!-- <dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-rest</artifactId>
+		</dependency> -->
+		
+		
+		
+		
+		<!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-rest-hal-browser -->
+		
+		<!-- 
+		To access the HAL browser
+		http://localhost:8080/browser/index.html#/  -->
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-rest-hal-browser</artifactId>
+			<version>3.3.7.RELEASE</version>
+		</dependency>
+
+
+    </dependencies>
+
+    <build>
+     
+      <!--  Custom package file name like .jar, .war, .ear -->
+     <finalName>new_file_package_name</finalName> 
+     
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
